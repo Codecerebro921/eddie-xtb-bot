@@ -1,15 +1,17 @@
 import time
+from datetime import datetime
 
-def run_xtb_bot():
-    print("Iniciando Eddie con XTB Demo...")
-    time.sleep(2)
-    print("Validando conexión con XTB API...")
-    time.sleep(2)
-    print("Verificando osciladores técnicos...")
-    time.sleep(2)
-    print("Esperando confirmación chartista...")
-    time.sleep(2)
-    print("Eddie está listo para operar en modo DEMO.")
+def iniciar_eddie():
+    print(f"[{datetime.now()}] Eddie inició correctamente en modo DEMO.")
+    print("Esperando próximas instrucciones para operar...")
 
+# Lógica principal
 if __name__ == "__main__":
-    run_xtb_bot()
+    iniciar_eddie()
+
+    try:
+        while True:
+            print(f"[{datetime.now()}] Eddie está activo... monitoreando.")
+            time.sleep(60)  # Espera 60 segundos
+    except KeyboardInterrupt:
+        print("Eddie fue detenido manualmente.")
