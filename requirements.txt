@@ -4,4 +4,4 @@ pandas
 gspread
 oauth2client
 schedule
-git+https://github.com/MarekKnapek/xapi-sdk.git
+git+https://github.com/MarekKnapek/xapi-sdk.git#egg=xapi&subdirectory=xapi
