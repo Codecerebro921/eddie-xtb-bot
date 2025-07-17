@@ -4,4 +4,4 @@ pandas
 gspread
 oauth2client
 schedule
-xapi-sdk==1.0.6
+git+https://github.com/MarekKnapek/xapi-sdk.git 
